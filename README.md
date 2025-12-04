@@ -2,6 +2,12 @@
 
 A simple example mod for [ZombieBuddy](https://github.com/zed-0xff/ZombieBuddy) that demonstrates how to create a patches-only mod without requiring a main class.
 
+## ☕ Support the Developer
+
+If you find this example helpful or enjoy using ZombieBuddy, consider supporting the developer with a coffee!
+
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/zed_0xff)
+
 ## What It Does
 
 This mod displays "Hello World from ZBHelloWorld!" text on the main menu screen by patching the game's `MainScreenState.renderBackground()` method.
