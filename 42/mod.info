@@ -1,0 +1,9 @@
+name=ZBHelloWorld
+id=ZBHelloWorld
+author=zed-0xff
+url=https://github.com/zed-0xff/ZBHelloWorld
+poster=poster.png
+icon=modIcon.png
+
+require=\ZombieBuddy
+javaJarFile=media/java/client/build/libs/client.jar
