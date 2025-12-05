@@ -14,7 +14,7 @@ This mod displays "Hello World from ZBHelloWorld!" text on the main menu screen 
 
 ## Features
 
-- ✅ **Patches-only mod**: No main class required - demonstrates automatic patch discovery
+- ✅ **Patches-only mod**: No Main class required - demonstrates automatic patch discovery from package
 - ✅ **Simple example**: Shows how to use `@Patch` annotations
 - ✅ **UI patching**: Demonstrates patching game UI rendering methods
 
@@ -26,16 +26,17 @@ This mod displays "Hello World from ZBHelloWorld!" text on the main menu screen 
 
 ## How It Works
 
-This mod demonstrates a **patches-only** approach - it doesn't require a `javaMainClass` entry in `mod.info`. ZombieBuddy automatically scans the JAR file for `@Patch` annotated classes and applies them.
+This mod demonstrates a **patches-only** approach - it doesn't require a Main class. ZombieBuddy automatically discovers and applies `@Patch` annotated classes from the package specified in `javaPkgName`.
 
 ### mod.info Configuration
 
 ```ini
 require=\ZombieBuddy
 javaJarFile=media/java/client/build/libs/client.jar
+javaPkgName=me.zed_0xff.zb_hello_world
 ```
 
-Notice that there's no `javaMainClass` entry! ZombieBuddy will automatically discover the `@Patch` annotated class in the JAR.
+Notice that there's no Main class! The `javaPkgName` entry specifies the package where patches are located. ZombieBuddy will automatically discover and apply all `@Patch` annotated classes in that package.
 
 ### The Patch
 
