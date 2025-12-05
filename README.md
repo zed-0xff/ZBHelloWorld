@@ -67,7 +67,7 @@ This patch:
 
 2. Build the JAR:
    ```bash
-   ./gradlew build
+   gradle build
    ```
 
 3. The JAR will be created at `build/libs/client.jar`
