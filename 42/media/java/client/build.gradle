@@ -5,8 +5,6 @@ def GAME_DIR = "${HOME_DIR}/Library/Application Support/Steam/steamapps/common/P
 def GAME_JAVA_DIR = "${GAME_DIR}/Contents/Java"
 
 dependencies {
-    implementation 'net.bytebuddy:byte-buddy:1.18.2'
-
     compileOnly files("${GAME_JAVA_DIR}/ZombieBuddy.jar")
     compileOnly files(GAME_JAVA_DIR)
 }

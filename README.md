@@ -15,7 +15,7 @@ This mod displays "Hello World from ZBHelloWorld!" text on the main menu screen 
 ## Features
 
 - ✅ **Patches-only mod**: No main class required - demonstrates automatic patch discovery
-- ✅ **Simple example**: Shows how to use `@Patch` annotations with ByteBuddy Advice
+- ✅ **Simple example**: Shows how to use `@Patch` annotations
 - ✅ **UI patching**: Demonstrates patching game UI rendering methods
 
 ## Installation
@@ -40,9 +40,11 @@ Notice that there's no `javaMainClass` entry! ZombieBuddy will automatically dis
 ### The Patch
 
 ```java
+import me.zed_0xff.zombie_buddy.Patch;
+
 @Patch(className = "zombie.gameStates.MainScreenState", methodName = "renderBackground")
 public class Patch_MainScreenState {
-    @Advice.OnMethodExit
+    @Patch.OnExit
     public static void exit() {
         TextManager.instance.DrawString(UIFont.Medium, 0, 0, 
             "Hello World from ZBHelloWorld!", 1.0, 1.0, 1.0, 1.0);
@@ -52,7 +54,7 @@ public class Patch_MainScreenState {
 
 This patch:
 - Targets the `renderBackground()` method in `MainScreenState`
-- Uses `@Advice.OnMethodExit` to execute code after the method completes
+- Uses `@Patch.OnExit` to execute code after the method completes
 - Draws text on the screen using the game's `TextManager`
 
 ## Building
@@ -95,7 +97,6 @@ ZBHelloWorld/
 This mod serves as a simple example for learning ZombieBuddy. For more information:
 
 - **ZombieBuddy Framework**: See the [ZombieBuddy repository](https://github.com/zed-0xff/ZombieBuddy) for the framework source code and [detailed documentation](https://github.com/zed-0xff/ZombieBuddy/blob/master/README.md)
-- **ByteBuddy Documentation**: Learn about [ByteBuddy Advice](https://bytebuddy.net/#/tutorial) for more advanced patching techniques
 
 ## Links
 
