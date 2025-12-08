@@ -104,6 +104,13 @@ This mod serves as a simple example for learning ZombieBuddy. For more informati
 - **GitHub**: https://github.com/zed-0xff/ZBHelloWorld
 - **ZombieBuddy Framework**: [ZombieBuddy](https://github.com/zed-0xff/ZombieBuddy) - The framework this mod is built on
 
+## Related Mods
+
+Other mods built with ZombieBuddy:
+
+- **[ZBetterWorkshopUpload](https://github.com/zed-0xff/ZBetterWorkshopUpload)**: Filters unwanted files from Steam Workshop uploads and provides upload previews
+- **[ZBMacOSHideMenuBar](https://github.com/zed-0xff/ZBMacOSHideMenuBar)**: Fixes the macOS menu bar issue in borderless windowed mode
+
 ## License
 
 See [LICENSE](LICENSE) file for details.
