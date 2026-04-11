@@ -108,6 +108,7 @@ This mod serves as a simple example for learning ZombieBuddy. For more informati
 
 Other mods built with ZombieBuddy:
 
+- **[ZBLuaPerfMon](https://github.com/zed-0xff/ZBLuaPerfMon)**: Real-time Lua performance monitoring and OSD
 - **[ZBetterWorkshopUpload](https://github.com/zed-0xff/ZBetterWorkshopUpload)**: Filters unwanted files from Steam Workshop uploads and provides upload previews
 - **[ZBMacOSHideMenuBar](https://github.com/zed-0xff/ZBMacOSHideMenuBar)**: Fixes the macOS menu bar issue in borderless windowed mode
 - **[ZBBetterFPS](https://github.com/zed-0xff/ZBBetterFPS)**: Optimizes FPS by reducing render distance
