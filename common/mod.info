@@ -6,5 +6,5 @@ poster=poster.png
 icon=modIcon.png
 
 require=\ZombieBuddy
-javaJarFile=media/java/client/build/libs/client.jar
+javaJarFile=media/java/client/ZBHelloWorld.jar
 javaPkgName=me.zed_0xff.zb_hello_world
