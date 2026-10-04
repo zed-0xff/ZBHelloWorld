@@ -1,11 +1,19 @@
 name=ZBHelloWorld
 id=ZBHelloWorld
-author=Zed
-url=https://github.com/zed-0xff/ZBHelloWorld
 poster=poster.png
 icon=modIcon.png
 
+author=Zed
+url=https://github.com/zed-0xff/ZBHelloWorld
+patreon=https://patreon.com/zed_0xff
+
 require=\ZombieBuddy
-ZBVersionMin=1.6.0
-javaJarFile=media/java/client/ZBHelloWorld.jar
+
 javaPkgName=me.zed_0xff.zb_hello_world
+
+javaJarFile=media/java/client/ZBHelloWorld-2x.jar
+ZBVersionMin=1.6.0
+ZBVersionMax=2.99.99
+
+javaJarFile1=media/java/client/ZBHelloWorld.jar
+ZBVersionMin1=3.0.0

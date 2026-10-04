@@ -1,6 +1,6 @@
 package me.zed_0xff.zb_hello_world;
 
-import me.zed_0xff.zombie_buddy.Patch;
+import me.zed_0xff.zombie_buddy.annotations.Patch;
 
 import zombie.ui.TextManager;
 import zombie.ui.UIFont;

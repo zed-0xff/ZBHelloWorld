@@ -32,7 +32,7 @@ This mod demonstrates a **patches-only** approach - it doesn't require a Main cl
 
 ```ini
 require=\ZombieBuddy
-javaJarFile=media/java/client/build/libs/client.jar
+javaJarFile=media/java/client/ZBHelloWorld.jar
 javaPkgName=me.zed_0xff.zb_hello_world
 ```
 
@@ -41,7 +41,7 @@ Notice that there's no Main class! The `javaPkgName` entry specifies the package
 ### The Patch
 
 ```java
-import me.zed_0xff.zombie_buddy.Patch;
+import me.zed_0xff.zombie_buddy.annotations.Patch;
 
 @Patch(className = "zombie.gameStates.MainScreenState", methodName = "renderBackground")
 public class Patch_MainScreenState {
@@ -62,7 +62,7 @@ This patch:
 
 1. Navigate to the Java project directory:
    ```bash
-   cd 42/media/java/client
+   cd 42/media/java
    ```
 
 2. Build the JAR:
@@ -70,7 +70,7 @@ This patch:
    gradle build
    ```
 
-3. The JAR will be created at `build/libs/client.jar`
+3. The JAR will be created at `ZBHelloWorld.jar`
 
 ## Project Structure
 
@@ -78,15 +78,16 @@ This patch:
 ZBHelloWorld/
 ├── 42/
 │   ├── mod.info
+│   ├── java/
+│   │   └── client/
+│   │       ├── build.gradle
+│   │       ├── src/
+│   │       │   └── Patch_MainScreenState.java
 │   └── media/
 │       ├── java/
 │       │   └── client/
-│       │       ├── build.gradle
-│       │       ├── src/
-│       │       │   └── Patch_MainScreenState.java
-│       │       └── build/
-│       │           └── libs/
-│       │               └── client.jar
+│       │       ├── ZBHelloWorld.jar
+│       │       └── ZBHelloWorld.jar.zbs
 │       └── lua/
 │           └── client/
 │               └── ZBHelloWorld.lua
